@@ -1,0 +1,20 @@
+{
+  "name": "mftracker",
+  "version": "1.0.0",
+  "description": "A comprehensive mutual fund tracking application with real-time data",
+  "main": "server/app.py",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && python app.py",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && pip install -r requirements.txt",
+    "setup": "npm run install-all"
+  },
+  "keywords": ["mutual-fund", "tracker", "portfolio", "investment", "python", "mftool"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
